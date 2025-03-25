@@ -1,4 +1,4 @@
-package ee.taltech.inbankbackend.endpoint;
+package ee.taltech.inbankbackend.dto;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 @Getter
 @Setter
 @Component
-public class DecisionResponse {
+public class DecisionResponseDTO {
     private Integer loanAmount;
     private Integer loanPeriod;
     private String errorMessage;

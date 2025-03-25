@@ -1,17 +1,17 @@
-package ee.taltech.inbankbackend.exceptions;
+package ee.taltech.inbankbackend.exception;
 
 /**
- * Thrown when provided personal ID code is invalid.
+ * Thrown when the applicant age is under 18 or over expected life expectancy.
  */
-public class InvalidPersonalCodeException extends Throwable {
+public class InvalidAgeException extends RuntimeException {
     private final String message;
     private final Throwable cause;
 
-    public InvalidPersonalCodeException(String message) {
+    public InvalidAgeException(String message) {
         this(message, null);
     }
 
-    public InvalidPersonalCodeException(String message, Throwable cause) {
+    public InvalidAgeException(String message, Throwable cause) {
         this.message = message;
         this.cause = cause;
     }

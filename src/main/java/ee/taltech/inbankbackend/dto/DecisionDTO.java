@@ -1,4 +1,4 @@
-package ee.taltech.inbankbackend.service;
+package ee.taltech.inbankbackend.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -8,7 +8,7 @@ import lombok.Getter;
  */
 @Getter
 @AllArgsConstructor
-public class Decision {
+public class DecisionDTO {
     private final Integer loanAmount;
     private final Integer loanPeriod;
     private final String errorMessage;
